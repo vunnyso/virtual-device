@@ -2,6 +2,7 @@ package gamepad
 
 import (
 	"fmt"
+
 	virtual_device "github.com/jbdemonte/virtual-device"
 	"github.com/jbdemonte/virtual-device/linux"
 )
@@ -20,6 +21,8 @@ type VirtualGamepad interface {
 	MoveRightStick(x, y float32)
 	MoveRightStickX(x float32)
 	MoveRightStickY(y float32)
+
+	Send(evType, code uint16, value int32)
 }
 
 type VirtualGamepadFactory interface {
@@ -263,5 +266,11 @@ func (vg *virtualGamepad) MoveRightStickX(x float32) {
 func (vg *virtualGamepad) MoveRightStickY(y float32) {
 	if vg.rightStick != nil {
 		vg.moveAxis(&vg.rightStick.Y, y)
+	}
+}
+
+func (vg *virtualGamepad) Send(evType, code uint16, value int32) {
+	if vg.device != nil {
+		vg.device.Send(evType, code, value)
 	}
 }
