@@ -1,9 +1,10 @@
 package mouse
 
 import (
-	virtual_device "github.com/jbdemonte/virtual-device"
-	"github.com/jbdemonte/virtual-device/linux"
 	"time"
+
+	virtual_device "github.com/vunnyso/virtual-device"
+	"github.com/vunnyso/virtual-device/linux"
 )
 
 type VirtualMouse interface {

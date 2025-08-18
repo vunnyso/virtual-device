@@ -1,8 +1,8 @@
 package touchpad
 
 import (
-	virtual_device "github.com/jbdemonte/virtual-device"
-	"github.com/jbdemonte/virtual-device/linux"
+	virtual_device "github.com/vunnyso/virtual-device"
+	"github.com/vunnyso/virtual-device/linux"
 )
 
 func NewGenericTouchpad() VirtualTouchpad {

@@ -1,8 +1,8 @@
 package gamepad
 
 import (
-	virtual_device "github.com/jbdemonte/virtual-device"
-	"github.com/jbdemonte/virtual-device/linux"
+	virtual_device "github.com/vunnyso/virtual-device"
+	"github.com/vunnyso/virtual-device/linux"
 )
 
 type MappingDigital map[Button]InputEvent // single or array

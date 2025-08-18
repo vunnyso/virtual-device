@@ -1,9 +1,10 @@
 package touchpad
 
 import (
-	virtual_device "github.com/jbdemonte/virtual-device"
-	"github.com/jbdemonte/virtual-device/linux"
 	"time"
+
+	virtual_device "github.com/vunnyso/virtual-device"
+	"github.com/vunnyso/virtual-device/linux"
 )
 
 // https://www.kernel.org/doc/Documentation/input/multi-touch-protocol.txt

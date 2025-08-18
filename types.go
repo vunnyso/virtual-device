@@ -1,9 +1,10 @@
 package virtual_device
 
 import (
-	"github.com/jbdemonte/virtual-device/linux"
-	"github.com/jbdemonte/virtual-device/utils"
 	"os"
+
+	"github.com/vunnyso/virtual-device/linux"
+	"github.com/vunnyso/virtual-device/utils"
 )
 
 type AbsAxis struct {

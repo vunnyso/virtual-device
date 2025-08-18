@@ -1,6 +1,6 @@
 package keyboard
 
-import "github.com/jbdemonte/virtual-device/linux"
+import "github.com/vunnyso/virtual-device/linux"
 
 type Repeat struct {
 	delay  int32

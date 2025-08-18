@@ -1,9 +1,9 @@
 package gamepad
 
 import (
-	virtual_device "github.com/jbdemonte/virtual-device"
-	"github.com/jbdemonte/virtual-device/linux"
-	"github.com/jbdemonte/virtual-device/sdl"
+	virtual_device "github.com/vunnyso/virtual-device"
+	"github.com/vunnyso/virtual-device/linux"
+	"github.com/vunnyso/virtual-device/sdl"
 )
 
 func NewSwitchPro() VirtualGamepad {
