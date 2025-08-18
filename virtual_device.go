@@ -3,14 +3,15 @@ package virtual_device
 import (
 	"errors"
 	"fmt"
-	"github.com/jbdemonte/virtual-device/linux"
-	"github.com/jbdemonte/virtual-device/sdl"
-	"github.com/jbdemonte/virtual-device/utils"
 	"os"
 	"strings"
 	"syscall"
 	"time"
 	"unsafe"
+
+	"github.com/jbdemonte/virtual-device/linux"
+	"github.com/jbdemonte/virtual-device/sdl"
+	"github.com/jbdemonte/virtual-device/utils"
 )
 
 type VirtualDevice interface {
@@ -144,7 +145,8 @@ func (vd *virtualDevice) Register() error {
 	}
 	fd, err := os.OpenFile(vd.path, syscall.O_WRONLY|syscall.O_NONBLOCK, vd.mode)
 	if err != nil {
-		return errors.New("could not open device file")
+		fmt.Errorf("Error occured %+v", err)
+		return errors.New("could not open device file1")
 	}
 
 	vd.fd = fd
